@@ -1,35 +1,39 @@
-/** Component Imports */
-import Example from './components/Example'
-
-/**
- * This is the entry point for your react-app
- *  1. We strongly recommend comparmentalizing your code into Components
- *  2. We strongly recommend putting those within the /components folder
- *  3. We strongly recommend using a modular-approach to CSS:
- *    - An example has been provided for you, see the 'Example' component
- *    - The 'Example.jsx' component comes with an 'Example.module.css'
- *    - Pay attention to variable file import (gives access to CSS variables)
- *    - Pay special attention to how we apply the className from the imported 'styles' 
- */
-
 const App = () => {
   return (
-    <div>
-      {<Example /> /** You can remove this when you wish, it's provided as an example of modular styling */}
-      
-      Shift the overall look and feel by adding these wonderful 
-      touches to furniture in your home
+    <article>
+      <figure>
+        <img src="./images/drawers.jpg" alt="Forest green chest of drawers" />
+      </figure>
 
-      Ever been in a room and felt like something was missing? Perhaps 
-      it felt slightly bare and uninviting. I’ve got some simple tips 
-      to help you make any room feel complete.
+      <main>
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
 
-      Michelle Appleton
-      28 Jun 2020
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I've got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </main>
 
-      Share
-    </div>
-  )
-}
+      <div className="card">
+        <figure>
+          <img
+            src="./images/avatar-michelle.jpg"
+            alt="Michelle Appleton's Avatar"
+          />
+        </figure>
+        <h2>Michelle Appleton</h2>
+        <span className="date">28 Jun 2020</span>
+      </div>
 
-export default App
+      <figure>
+        <img src="./images/icon-share.svg" alt="Share Icon" />
+      </figure>
+    </article>
+  );
+};
+
+export default App;
