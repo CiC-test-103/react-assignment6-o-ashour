@@ -4,3 +4,9 @@
   font-size: 1.125rem;
   color: var(--clr-veryDarkGrayishBlue);
 }
+
+@media (min-width: 1440px) {
+  .header {
+    font-size: 1.25rem;
+  }
+}

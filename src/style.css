@@ -6,43 +6,72 @@
  * Source: https://www.joshwcomeau.com/css/custom-css-reset/
 */
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 /* 2. Remove default margin */
 * {
   margin: 0;
 }
+
 body {
   /* 3. Add accessible line-height */
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
+
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
+
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
+
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
+
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
+
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -50,13 +79,24 @@ h1, h2, h3, h4, h5, h6 {
 /* We recommend writing minimal component-specific CSS here */
 body {
   font-family: var(--ff-base);
+  background-color: var(--clr-lightGrayishBlue);
+}
+
+article {
+  background-color: #fff;
+  max-width: 328px;
+  margin-top: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 9px 1px hsl(210, 46%, 88%);
 }
 
 main {
   position: relative;
   margin-top: 3em;
-  margin-bottom: 3em;
-  padding: 0 3em;
+  padding: 0 32px;
 }
 
 .attribution {
@@ -64,11 +104,31 @@ main {
   bottom: 0;
 }
 
-/** Attribution CSS **/
-.attribution { 
-  font-size: 13px; 
-  text-align: center; 
+@media (min-width: 1440px) {
+  article {
+    max-width: 731px;
+    display: flex;
+    margin-top: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: initial;
+    box-shadow: 3px 6px 9px 1px hsl(210, 46%, 88%);
+  }
+
+  main {
+    flex: 60%;
+    margin: 0;
+    padding: 36px;
+    padding-bottom: 28px;
+  }
 }
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+
+/** Attribution CSS **/
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

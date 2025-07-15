@@ -5,4 +5,19 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    flex: 40%;
+  }
+
+  .hero img {
+    max-height: initial;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 10px 0 0 10px;
+  }
 }

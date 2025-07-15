@@ -3,7 +3,7 @@
 .card {
   display: flex;
   font-size: var(--font-paragraph);
-  margin-top: 3em;
+  margin-top: 32px;
 }
 
 .card img {
@@ -23,4 +23,10 @@
 
 .card span {
   color: var(--clr-grayishBlue);
+}
+
+@media (min-width: 1440px) {
+  .card {
+    margin-top: 1.5em;
+  }
 }
