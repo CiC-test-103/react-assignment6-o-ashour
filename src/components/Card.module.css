@@ -1,0 +1,26 @@
+@import "../variables.css";
+
+.card {
+  display: flex;
+  font-size: var(--font-paragraph);
+  margin-top: 3em;
+}
+
+.card img {
+  width: 3em;
+  border-radius: 50%;
+}
+
+.card div {
+  margin-left: 1.25em;
+}
+
+.card h2 {
+  color: var(--clr-veryDarkGrayishBlue);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card span {
+  color: var(--clr-grayishBlue);
+}

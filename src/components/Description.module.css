@@ -1,0 +1,7 @@
+@import '../variables.css';
+
+.description {
+  font-size: var(--font-paragraph);
+  color: var(--clr-veryDarkGrayishBlue);
+  margin-top: 1em;
+}

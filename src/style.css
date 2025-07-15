@@ -48,7 +48,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Global CSS **/
 /* We recommend writing minimal component-specific CSS here */
+body {
+  font-family: var(--ff-base);
+}
 
+main {
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 0 3em;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
 
 /** Attribution CSS **/
 .attribution { 

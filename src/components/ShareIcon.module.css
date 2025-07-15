@@ -1,0 +1,10 @@
+@import '../variables.css';
+
+.icon {
+  position: absolute;
+  right: 15%;
+  bottom: 2.5%;
+  background-color: var(--clr-lightGrayishBlue);
+  padding: 0.5em;
+  border-radius: 50%;
+}
