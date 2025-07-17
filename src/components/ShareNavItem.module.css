@@ -1,0 +1,10 @@
+@import '../variables.css';
+
+li {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "../variables.css";
+import styles from './SharePopup.module.css';
 import ShareNav from "./ShareNav";
 
 function SharePopup(props) {
@@ -14,8 +14,8 @@ function SharePopup(props) {
   }, [props.showDialog]);
 
   return (
-    <dialog ref={dialog}>
-      <div className="dialog-wrapper-inner">
+    <dialog ref={dialog} className={styles.dialog}>
+      <div className={styles.wrapper}>
         <span>SHARE</span>
         <ShareNav />
       </div>

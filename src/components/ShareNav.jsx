@@ -1,30 +1,31 @@
-import "../variables.css";
+import styles from "./ShareNav.module.css"
 import ShareNavItem from "./ShareNavItem";
 
 const shareIcons = {
   facebook: {
-    path: "./images/icon-facebook.svg",
+    path: "../images/icon-facebook.svg",
     description: "facebook icon",
   },
   twitter: {
-    path: "./images/icon-twitter.svg",
+    path: "../images/icon-twitter.svg",
     description: "twitter icon",
   },
   pinterest: {
-    path: "./images/icon-pinterest.svg",
+    path: "../images/icon-pinterest.svg",
     description: "pinterest icon",
   },
 };
 
 function ShareNav() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         {Object.keys(shareIcons).map((shareIconKey) => {
           return (
             <ShareNavItem
-              path={shareIconKey.path}
-              description={shareIconKey.description}
+              key={shareIconKey}
+              path={shareIcons[shareIconKey].path}
+              description={shareIcons[shareIconKey].description}
             />
           );
         })}

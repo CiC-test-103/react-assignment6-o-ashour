@@ -1,0 +1,31 @@
+@import '../variables.css';
+
+dialog {
+  padding: 16px 37px;
+  background-color: var(--clr-veryDarkGrayishBlue);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: var(--font-paragraph);
+  top: 40%;
+  left: 62.5%;
+  z-index: 1;
+}
+
+dialog span {
+  letter-spacing: 6px;
+}
+
+dialog svg {
+  position: absolute;
+  width: 14%;
+  bottom: -23%;
+  z-index: -1;
+  left: 44%;
+}
+
+.wrapper {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}

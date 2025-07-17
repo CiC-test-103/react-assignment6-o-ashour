@@ -121,55 +121,6 @@ main {
     padding: 36px;
     padding-bottom: 28px;
   }
-
-  .dialog-speech-pointer-shape {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-  }
-
-  .dialog-wrapper-inner {
-    display: flex;
-    gap: 1em;
-    align-items: center;
-  }
-
-  dialog {
-    padding: 16px 37px;
-    background-color: var(--clr-veryDarkGrayishBlue);
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: var(--font-paragraph);
-    top: 40%;
-    left: 62.5%;
-    z-index: 1;
-  }
-
-  dialog span {
-    letter-spacing: 6px;
-  }
-
-  dialog nav ul {
-    padding-inline-start: initial;
-  }
-
-  dialog nav ul li {
-    display: inline-block;
-    margin-right: 14px;
-  }
-
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-
-  dialog svg {
-    position: absolute;
-    width: 14%;
-    bottom: -23%;
-    z-index: -1;
-    left: 44%;
-  }
 }
 
 /** Attribution CSS **/
