@@ -1,14 +1,13 @@
 @import '../../variables.css';
 
 dialog {
-  padding: 16px 37px;
+  padding: 20px 32px;
   background-color: var(--clr-veryDarkGrayishBlue);
   border: none;
   border-radius: 0 0 8px 8px;
   color: #fff;
   font-size: var(--font-paragraph);
   bottom: 0;
-  left: 0;
   z-index: 1;
   width: 100%;
 }
@@ -34,11 +33,11 @@ dialog svg {
 
 @media (min-width: 1440px) {
   dialog {
-    width: initial;
+    width: fit-content;
     padding: 16px 37px;
     border-radius: 8px;
-    top: 50%;
-    left: 70%;
+    top: 51%;
+    left: 68.5%;
   }
 
   dialog svg {

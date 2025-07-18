@@ -1,9 +1,6 @@
 import Hero from "./components/Hero";
-import Header from "./components/Header";
-import Description from "./components/Description";
-import Card from "./components/Card";
-import ShareButton from "./components/ShareButton";
 import SharePopup from "./components/SharePopup";
+import Content from "./components/Content";
 
 import { useState } from "react";
 
@@ -14,15 +11,8 @@ const App = () => {
     <div className="dialog-wrapper-outer">
       <article>
         <Hero />
-        <main>
-          <Header />
-          <Description />
-          <Card />
-          <ShareButton showDialog={showDialog} setShowDialog={setShowDialog} />
-        </main>
-        <SharePopup showDialog={showDialog} id="shareSM" />
+        <Content setShowDialog={setShowDialog} showDialog={showDialog} />
       </article>
-
       <SharePopup showDialog={showDialog} id="shareLG" />
     </div>
   );

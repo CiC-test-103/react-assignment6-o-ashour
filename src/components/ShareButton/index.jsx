@@ -13,11 +13,12 @@ function ShareButton(props) {
   }
   return (
     <button
+    id={props.id}
       className={styles.icon}
       onClick={() => {
         props.setShowDialog(() => !props.showDialog);
       }}
-      style={{ backgroundColor: `${props.showDialog ? iconStyles.active.backgroundColor : iconStyles.default.backgroundColor }`}}
+      style={{ backgroundColor: `${props.showDialog ? iconStyles.active.backgroundColor : iconStyles.default.backgroundColor }`, top: `${props.showDialog ? '3px' : 'initial'}`}}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
         <path

@@ -4,18 +4,9 @@
   background-color: none;
   border: none;
   cursor: pointer;
-  position: absolute;
-  right: 32px;
-  bottom: 2.5%;
+  position: relative;
   background-color: var(--clr-lightGrayishBlue);
   padding: 8px;
   border-radius: 50%;
   z-index: 2;
-}
-
-@media (min-width: 1440px) {
-  .icon {
-    right: 40px;
-    bottom: 11%;
-  }
 }

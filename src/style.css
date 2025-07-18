@@ -86,23 +86,25 @@ article {
   position: relative;
   background-color: #fff;
   max-width: 328px;
+  margin-top: 4.5em;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 5px 9px 1px hsl(210, 46%, 88%);
 }
 
 main {
   position: relative;
-  margin-top: 3em;
-  padding: 0 32px;
 }
 
 .attribution {
   position: absolute;
   bottom: 0;
 }
+
+#shareBtnLG {
+    display: none;
+  }
 
 #shareLG {
     visibility: hidden;
@@ -128,15 +130,7 @@ main {
   article {
     max-width: 731px;
     display: flex;
-    padding-bottom: initial;
     box-shadow: 3px 6px 9px 1px hsl(210, 46%, 88%);
-  }
-
-  main {
-    flex: 60%;
-    margin: 0;
-    padding: 36px;
-    padding-bottom: 28px;
   }
 }
 
