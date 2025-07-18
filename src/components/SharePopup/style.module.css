@@ -4,12 +4,13 @@ dialog {
   padding: 16px 37px;
   background-color: var(--clr-veryDarkGrayishBlue);
   border: none;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   color: #fff;
   font-size: var(--font-paragraph);
-  top: 50%;
-  left: 70%;
+  bottom: 0;
+  left: 0;
   z-index: 1;
+  width: 100%;
 }
 
 dialog span {
@@ -17,6 +18,7 @@ dialog span {
 }
 
 dialog svg {
+  display: none;
   position: absolute;
   width: 14%;
   bottom: -23%;
@@ -28,4 +30,18 @@ dialog svg {
   display: flex;
   gap: 1em;
   align-items: center;
+}
+
+@media (min-width: 1440px) {
+  dialog {
+    width: initial;
+    padding: 16px 37px;
+    border-radius: 8px;
+    top: 50%;
+    left: 70%;
+  }
+
+  dialog svg {
+    display: initial;
+  }
 }

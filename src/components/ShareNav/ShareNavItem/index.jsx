@@ -1,9 +1,11 @@
-import styles from './style.module.css';
+import styles from "./style.module.css";
 
 function ShareNavItem(props) {
   return (
     <li className={styles.li}>
-      <img src={props.path} alt={props.description} />
+      <button>
+        <img src={props.path} alt={props.description} />
+      </button>
     </li>
   );
 }

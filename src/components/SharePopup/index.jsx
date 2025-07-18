@@ -14,7 +14,7 @@ function SharePopup(props) {
   }, [props.showDialog]);
 
   return (
-    <dialog ref={dialog} className={styles.dialog}>
+    <dialog ref={dialog} id={props.id} className={styles.dialog}>
       <div className={styles.wrapper}>
         <span>SHARE</span>
         <ShareNav />

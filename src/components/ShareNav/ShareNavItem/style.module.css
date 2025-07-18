@@ -8,3 +8,9 @@ li {
 ul li:last-child {
   margin-right: 0;
 }
+
+li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

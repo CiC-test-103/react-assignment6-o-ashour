@@ -83,6 +83,7 @@ body {
 }
 
 article {
+  position: relative;
   background-color: #fff;
   max-width: 328px;
   margin-right: auto;
@@ -103,6 +104,10 @@ main {
   bottom: 0;
 }
 
+#shareLG {
+    visibility: hidden;
+  }
+
 @media (min-width: 1440px) {
   .dialog-wrapper-outer {
     width: 928px; 
@@ -110,6 +115,14 @@ main {
     margin-left: auto; 
     margin-right: auto; 
     margin-top: 15em;
+  }
+
+  #shareSM {
+    visibility: hidden;
+  }
+
+  #shareLG {
+    visibility: visible;
   }
 
   article {

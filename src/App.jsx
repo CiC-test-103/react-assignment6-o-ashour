@@ -20,8 +20,10 @@ const App = () => {
           <Card />
           <ShareButton showDialog={showDialog} setShowDialog={setShowDialog} />
         </main>
+        <SharePopup showDialog={showDialog} id="shareSM" />
       </article>
-      <SharePopup showDialog={showDialog} />
+
+      <SharePopup showDialog={showDialog} id="shareLG" />
     </div>
   );
 };
