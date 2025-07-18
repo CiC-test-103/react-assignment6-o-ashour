@@ -1,4 +1,4 @@
-import styles from './ShareNavItem.module.css';
+import styles from './style.module.css';
 
 function ShareNavItem(props) {
   return (

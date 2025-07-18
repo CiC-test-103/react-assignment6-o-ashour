@@ -1,4 +1,4 @@
-import styles from "./Card.module.css";
+import styles from "./style.module.css";
 
 function Card() {
   return (

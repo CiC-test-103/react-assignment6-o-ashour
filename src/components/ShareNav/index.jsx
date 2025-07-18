@@ -1,4 +1,4 @@
-import styles from "./ShareNav.module.css"
+import styles from "./style.module.css"
 import ShareNavItem from "./ShareNavItem";
 
 const shareIcons = {

@@ -1,4 +1,4 @@
-import styles from "./ShareButton.module.css";
+import styles from "./style.module.css";
 
 function ShareButton(props) {
   const iconStyles = {

@@ -1,4 +1,4 @@
-import styles from "./Description.module.css";
+import styles from "./style.module.css";
 
 function Description() {
   return (

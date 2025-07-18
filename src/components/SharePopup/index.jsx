@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import styles from './SharePopup.module.css';
-import ShareNav from "./ShareNav";
+import styles from './style.module.css';
+import ShareNav from "../ShareNav";
 
 function SharePopup(props) {
   const dialog = useRef(null);
