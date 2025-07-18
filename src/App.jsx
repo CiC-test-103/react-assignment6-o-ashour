@@ -11,16 +11,18 @@ const App = () => {
   const [showDialog, setShowDialog] = useState(false);
 
   return (
-    <article>
-      <Hero />
-      <main>
-        <Header />
-        <Description />
-        <Card />
-        <ShareButton showDialog={showDialog} setShowDialog={setShowDialog} />
-      </main>
+    <div className="dialog-wrapper-outer">
+      <article>
+        <Hero />
+        <main>
+          <Header />
+          <Description />
+          <Card />
+          <ShareButton showDialog={showDialog} setShowDialog={setShowDialog} />
+        </main>
+      </article>
       <SharePopup showDialog={showDialog} />
-    </article>
+    </div>
   );
 };
 
