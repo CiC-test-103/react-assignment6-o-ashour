@@ -103,12 +103,19 @@ main {
 }
 
 #shareBtnLG {
-    display: none;
-  }
+  display: none;
+}
 
 #shareLG {
-    visibility: hidden;
-  }
+  visibility: hidden;
+}
+
+.attribution {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
 
 @media (min-width: 1440px) {
   .dialog-wrapper-outer {
